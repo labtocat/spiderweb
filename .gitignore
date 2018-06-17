@@ -1,0 +1,23 @@
+.DS_Store
+.vscode
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Distribution / packaging
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+db.sqlite3*
+*.pyc
+*.log
+*.map

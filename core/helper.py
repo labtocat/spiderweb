@@ -39,7 +39,7 @@ class Crawling:
             hosturl = ''
         for image in images:
             if image.startswith("/"):
-                collective_image.append(hosturl+image)
+                collective_image.append(f'https://{hosturl}{image}')
             else:
                 collective_image.append(image)
         return collective_image

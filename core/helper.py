@@ -33,9 +33,13 @@ class Crawling:
         data = []
         images = re.findall('img src="([^"]+)"', self.temp_store)
         collective_image = []
+        try:
+            hosturl = self.host.replace('https://', '').replace('http://', '').split('/')[0]
+        except:
+            hosturl = ''
         for image in images:
             if image.startswith("/"):
-                collective_image.append(self.host+image)
+                collective_image.append(hosturl+image)
             else:
                 collective_image.append(image)
         return collective_image

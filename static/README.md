@@ -1,6 +1,6 @@
-# router-app
+# Vue Web
 
-> A Vue.js project
+> A Vue.js project that runs on top of django project.
 
 ## Build Setup
 
